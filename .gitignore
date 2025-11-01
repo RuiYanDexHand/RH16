@@ -4,7 +4,7 @@
 # Compiled Object files
 *.slo
 *.lo
-*.o
+# *.o
 *.obj
 
 # Precompiled Headers
@@ -18,7 +18,7 @@
 *.pdb
 
 # Compiled Dynamic libraries
-*.so
+# *.so
 *.dylib
 *.dll
 
@@ -39,3 +39,14 @@
 
 # debug information files
 *.dwo
+
+
+# ROS2 build and install directories
+/build/
+/install/
+
+# Colcon logs
+/log/
+
+# ROS2 workspace files
+.colcon

@@ -1,0 +1,51 @@
+# RH16 Hand Controller Parameters
+# RH16手部控制器参数配置
+
+# CAN通信参数
+rh16_can_node:
+  ros__parameters:
+    can_interface: "can0"
+    publish_rate: 100.0
+    motor_timeout: 1.0
+    retry_count: 3
+
+# 运动学参数
+rh16_kinematics_node:
+  ros__parameters:
+    urdf_path_left: ""  # 空字符串使用默认路径
+    urdf_path_right: ""
+    use_pinocchio: true
+    ik_max_iterations: 100
+    ik_tolerance: 1e-6
+    ik_damping: 1e-6
+    ik_step_size: 0.1
+
+# 主控制器参数
+rh16_ctrl_node:
+  ros__parameters:
+    publish_rate: 100.0
+    left_hand: true
+    right_hand: false
+    command_timeout: 0.5
+    safety_check: true
+    
+    # 关节限制 (弧度)
+    joint_limits:
+      lower: [-1.57, -1.57, -1.57, -1.57, -1.57, -1.57, -1.57, -1.57, -1.57, -1.57, -1.57, -1.57, -1.57, -1.57, -1.57, -1.57, -1.57, -1.57, -1.57, -1.57]
+      upper: [1.57, 1.57, 1.57, 1.57, 1.57, 1.57, 1.57, 1.57, 1.57, 1.57, 1.57, 1.57, 1.57, 1.57, 1.57, 1.57, 1.57, 1.57, 1.57, 1.57]
+    
+    # 电机参数
+    motor_params:
+      default_speed: 1000
+      default_current_limit: 80
+      position_range: [0, 4095]
+      speed_range: [0, 4095]
+      current_range: [0, 4095]
+
+# 测试节点参数
+rh16_test_node:
+  ros__parameters:
+    test_mode: "basic"  # basic, gesture, smooth
+    test_hand: "left"   # left, right
+    test_duration: 30.0
+    test_frequency: 10.0
