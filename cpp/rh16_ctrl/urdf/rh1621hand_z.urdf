@@ -1,0 +1,1836 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.6.0-4-g7f85cfe  Build Version: 1.6.7995.38578
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="rh1621hand_z">
+  <link
+    name="base_link">
+    <inertial>
+      <origin
+        xyz="0.00110197975019326 -0.000917605448095569 0.0637421002838522"
+        rpy="0 0 0" />
+      <mass
+        value="0.323810005621153" />
+      <inertia
+        ixx="0.000312403765475972"
+        ixy="6.2857112295736E-07"
+        ixz="7.68178576929641E-06"
+        iyy="0.000151071783908748"
+        iyz="7.37512346342534E-06"
+        izz="0.000209130956492122" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://rh1621hand_z/meshes/base_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.898039215686275 0.917647058823529 0.929411764705882 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://rh1621hand_z/meshes/base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="fz1611_Link">
+    <inertial>
+      <origin
+        xyz="0.00780705663958972 -0.0125957661077344 0.0147638380324973"
+        rpy="0 0 0" />
+      <mass
+        value="0.019434358265192" />
+      <inertia
+        ixx="3.58477447905575E-06"
+        ixy="8.6239260735905E-07"
+        ixz="7.30129222510843E-08"
+        iyy="1.79666810569862E-06"
+        iyz="4.16037845154503E-08"
+        izz="3.94052488053142E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://rh1621hand_z/meshes/fz1611_Link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.898039215686275 0.917647058823529 0.929411764705882 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://rh1621hand_z/meshes/fz1611_Link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="fz1611"
+    type="revolute">
+    <origin
+      xyz="0.025 -0.016 0.0308"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="fz1611_Link" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="0"
+      upper="1.9199"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="fz1612_Link">
+    <inertial>
+      <origin
+        xyz="0.000899580502103467 -0.00636666624772403 0.00700000003416471"
+        rpy="0 0 0" />
+      <mass
+        value="0.0015868067565926" />
+      <inertia
+        ixx="6.70354992228608E-08"
+        ixy="4.9804898158959E-09"
+        ixz="-3.35269812815482E-16"
+        iyy="3.24904292734718E-08"
+        iyz="2.8278980662228E-16"
+        izz="4.46519285352043E-08" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://rh1621hand_z/meshes/fz1612_Link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.898039215686275 0.917647058823529 0.929411764705882 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://rh1621hand_z/meshes/fz1612_Link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="fz1612"
+    type="revolute">
+    <origin
+      xyz="0.019802 -0.02789 0.0282"
+      rpy="-1.5708 0 1.5272" />
+    <parent
+      link="fz1611_Link" />
+    <child
+      link="fz1612_Link" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="0"
+      upper="1.25"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="fz1613_Link">
+    <inertial>
+      <origin
+        xyz="-0.0241778515834213 -0.00108347104506649 0.00759034316988311"
+        rpy="0 0 0" />
+      <mass
+        value="0.0334500209453485" />
+      <inertia
+        ixx="2.44767897829535E-06"
+        ixy="-2.94573062590086E-08"
+        ixz="2.73559109868266E-07"
+        iyy="3.23381976972626E-06"
+        iyz="5.42550495014822E-08"
+        izz="2.38819559705263E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://rh1621hand_z/meshes/fz1613_Link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.898039215686275 0.917647058823529 0.929411764705882 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://rh1621hand_z/meshes/fz1613_Link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="fz1613"
+    type="revolute">
+    <origin
+      xyz="0.0024344 -0.017229 0.007"
+      rpy="-1.5708 -0.044066 0.14037" />
+    <parent
+      link="fz1612_Link" />
+    <child
+      link="fz1613_Link" />
+    <axis
+      xyz="0 0 -1" />
+    <limit
+      lower="-0.349"
+      upper="0.349"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="fz1614_Link">
+    <inertial>
+      <origin
+        xyz="-0.0125647366527435 -0.0026869170698116 0.00830081252920047"
+        rpy="0 0 0" />
+      <mass
+        value="0.00454235533058453" />
+      <inertia
+        ixx="1.59431964415494E-07"
+        ixy="-6.30920349344049E-08"
+        ixz="-2.07930715307124E-09"
+        iyy="3.61288668298109E-07"
+        iyz="-9.32432909670952E-10"
+        izz="4.59524300514432E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://rh1621hand_z/meshes/fz1614_Link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.898039215686275 0.917647058823529 0.929411764705882 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://rh1621hand_z/meshes/fz1614_Link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="fz1614"
+    type="revolute">
+    <origin
+      xyz="-0.063356 0.0054804 0.0101"
+      rpy="1.5708 0.14037 0.044066" />
+    <parent
+      link="fz1613_Link" />
+    <child
+      link="fz1614_Link" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="0"
+      upper="1.3355"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="fz1615_Link">
+    <inertial>
+      <origin
+        xyz="-0.00398991444689542 0.00389990001143018 0.00766614744904601"
+        rpy="0 0 0" />
+      <mass
+        value="0.00405495530694649" />
+      <inertia
+        ixx="1.71927074495625E-07"
+        ixy="7.79744497213276E-08"
+        ixz="-3.32082546957823E-12"
+        iyy="3.19029025424838E-07"
+        iyz="5.25753440751137E-12"
+        izz="3.37101065889146E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://rh1621hand_z/meshes/fz1615_Link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.898039215686275 0.917647058823529 0.929411764705882 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://rh1621hand_z/meshes/fz1615_Link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="fz1615"
+    type="revolute">
+    <origin
+      xyz="-0.026098 -0.0074325 0.0006"
+      rpy="0 0 0" />
+    <parent
+      link="fz1614_Link" />
+    <child
+      link="fz1615_Link" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="0"
+      upper="1.1631"
+      effort="0"
+      velocity="0" />
+    <mimic joint="fz1614" multiplier="1.0" offset="0.0"/>
+  </joint>
+  <link
+    name="fz1616_Link">
+    <inertial>
+      <origin
+        xyz="0.000945212329983475 1.16483637664644E-06 -0.00555050169679687"
+        rpy="0 0 0" />
+      <mass
+        value="0.00215217407951308" />
+      <inertia
+        ixx="1.6203926855777E-07"
+        ixy="-3.30502589164124E-11"
+        ixz="2.04340382359252E-08"
+        iyy="1.24870284461961E-07"
+        iyz="5.08939793115433E-11"
+        izz="9.83137539137742E-08" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://rh1621hand_z/meshes/fz1616_Link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.298039215686275 0.298039215686275 0.298039215686275 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://rh1621hand_z/meshes/fz1616_Link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="fz1616"
+    type="revolute">
+    <origin
+      xyz="-0.019051 0.0014651 0.007666"
+      rpy="1.5708 0 -1.5161" />
+    <parent
+      link="fz1615_Link" />
+    <child
+      link="fz1616_Link" />
+    <axis
+      xyz="0 0 -1" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="fz1621_Link">
+    <inertial>
+      <origin
+        xyz="-5.73846525853128E-15 -3.33066907387547E-16 0.0144895176625968"
+        rpy="0 0 0" />
+      <mass
+        value="0.00163674187446043" />
+      <inertia
+        ixx="4.95179442076948E-08"
+        ixy="-3.55735142967519E-11"
+        ixz="1.31166514875339E-21"
+        iyy="8.54469633350304E-08"
+        iyz="-1.33290574961831E-18"
+        izz="4.31474049831044E-08" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://rh1621hand_z/meshes/fz1621_Link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.898039215686275 0.917647058823529 0.929411764705882 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://rh1621hand_z/meshes/fz1621_Link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="fz1621"
+    type="revolute">
+    <origin
+      xyz="-0.018 -0.03525 0.1175"
+      rpy="1.5708 0 1.5708" />
+    <parent
+      link="base_link" />
+    <child
+      link="fz1621_Link" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-0.349"
+      upper="0.349"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="fz1622_Link">
+    <inertial>
+      <origin
+        xyz="-0.0216856236836617 -0.000531168856556017 0.0103777995348112"
+        rpy="0 0 0" />
+      <mass
+        value="0.00954315766274392" />
+      <inertia
+        ixx="3.9145111449451E-07"
+        ixy="-2.95838348615777E-08"
+        ixz="-2.01869784618905E-09"
+        iyy="1.35747461489413E-06"
+        iyz="1.48037796417781E-11"
+        izz="1.6348272601439E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://rh1621hand_z/meshes/fz1622_Link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.898039215686275 0.917647058823529 0.929411764705882 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://rh1621hand_z/meshes/fz1622_Link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="fz1622"
+    type="revolute">
+    <origin
+      xyz="-0.0105 -1.0396E-05 0.0208"
+      rpy="-1.5708 0 -1.5698" />
+    <parent
+      link="fz1621_Link" />
+    <child
+      link="fz1622_Link" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="0"
+      upper="1.557"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="fz1623_Link">
+    <inertial>
+      <origin
+        xyz="0.00116053822501098 -0.0127963353144536 0.00833469128673149"
+        rpy="0 0 0" />
+      <mass
+        value="0.0045425750511056" />
+      <inertia
+        ixx="3.73420476808611E-07"
+        ixy="3.72421061761815E-08"
+        ixz="6.78007035338002E-10"
+        iyy="1.4731493130705E-07"
+        iyz="-2.17740084170768E-09"
+        izz="4.59536141556119E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://rh1621hand_z/meshes/fz1623_Link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.898039215686275 0.917647058823529 0.929411764705882 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://rh1621hand_z/meshes/fz1623_Link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="fz1623"
+    type="revolute">
+    <origin
+      xyz="-0.03998 0.0032593 0.0021"
+      rpy="0 0 -1.5708" />
+    <parent
+      link="fz1622_Link" />
+    <child
+      link="fz1623_Link" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="0"
+      upper="1.406"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="fz1624_Link">
+    <inertial>
+      <origin
+        xyz="-0.0048915295900097 -0.00367976600359962 0.00846615782566914"
+        rpy="0 0 0" />
+      <mass
+        value="0.0040549801271219" />
+      <inertia
+        ixx="2.96879075675117E-07"
+        ixy="-9.40631754867848E-08"
+        ixz="-5.62155099591797E-12"
+        iyy="1.94079478041697E-07"
+        iyz="-3.20649158394989E-12"
+        izz="3.37103375720109E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://rh1621hand_z/meshes/fz1624_Link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.898039215686275 0.917647058823529 0.929411764705882 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://rh1621hand_z/meshes/fz1624_Link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="fz1624"
+    type="revolute">
+    <origin
+      xyz="0.0047606 -0.026577 -0.000166"
+      rpy="0 0 0" />
+    <parent
+      link="fz1623_Link" />
+    <child
+      link="fz1624_Link" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="0"
+      upper="1.169"
+      effort="0"
+      velocity="0" />
+    <mimic joint="fz1623" multiplier="1.0" offset="0.0"/>
+  </joint>
+  <link
+    name="fz1625_Link">
+    <inertial>
+      <origin
+        xyz="0.00135005749949922 6.88388121729386E-06 -0.00546629477618135"
+        rpy="0 0 0" />
+      <mass
+        value="0.00215218837776335" />
+      <inertia
+        ixx="1.58678580577437E-07"
+        ixy="-6.62439031351475E-11"
+        ixz="2.4868513412467E-08"
+        iyy="1.24856397724867E-07"
+        iyz="7.45416268615263E-11"
+        izz="1.01653794093199E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://rh1621hand_z/meshes/fz1625_Link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.298039215686275 0.298039215686275 0.298039215686275 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://rh1621hand_z/meshes/fz1625_Link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="fz1625"
+    type="revolute">
+    <origin
+      xyz="-0.0044 -0.018928 0.008466"
+      rpy="1.5698 0 0" />
+    <parent
+      link="fz1624_Link" />
+    <child
+      link="fz1625_Link" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="fz1631_Link">
+    <inertial>
+      <origin
+        xyz="-4.73197869776953E-14 -1.11022302462516E-15 0.0144895176625968"
+        rpy="0 0 0" />
+      <mass
+        value="0.00163674187446043" />
+      <inertia
+        ixx="4.95179442076947E-08"
+        ixy="-3.55735142950982E-11"
+        ixz="1.31899038084892E-21"
+        iyy="8.54469633350303E-08"
+        iyz="-1.3329037989824E-18"
+        izz="4.31474049831044E-08" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://rh1621hand_z/meshes/fz1631_Link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.898039215686275 0.917647058823529 0.929411764705882 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://rh1621hand_z/meshes/fz1631_Link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="fz1631"
+    type="revolute">
+    <origin
+      xyz="-0.018 -0.01175 0.119"
+      rpy="1.5708 0 1.5708" />
+    <parent
+      link="base_link" />
+    <child
+      link="fz1631_Link" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-0.349"
+      upper="0.349"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="fz1632_Link">
+    <inertial>
+      <origin
+        xyz="-0.0239105901655746 -0.000576561782955733 0.0103830811184788"
+        rpy="0 0 0" />
+      <mass
+        value="0.0106604335722009" />
+      <inertia
+        ixx="4.47827079761434E-07"
+        ixy="-3.48556217067684E-08"
+        ixz="-2.26748341922625E-09"
+        iyy="1.91424265849479E-06"
+        iyz="-1.36680333276914E-11"
+        izz="2.23680338651727E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://rh1621hand_z/meshes/fz1632_Link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.898039215686275 0.917647058823529 0.929411764705882 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://rh1621hand_z/meshes/fz1632_Link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="fz1632"
+    type="revolute">
+    <origin
+      xyz="-0.0105 -1.0396E-05 0.0208"
+      rpy="-1.5708 0 -1.5698" />
+    <parent
+      link="fz1631_Link" />
+    <child
+      link="fz1632_Link" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="0"
+      upper="1.557"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="fz1633_Link">
+    <inertial>
+      <origin
+        xyz="0.0009163819243036 -0.0128161123390366 0.00830073436692799"
+        rpy="0 0 0" />
+      <mass
+        value="0.0045425511678889" />
+      <inertia
+        ixx="3.74757493239707E-07"
+        ixy="3.29049763101724E-08"
+        ixz="6.36016804136773E-10"
+        iyy="1.45976660916528E-07"
+        iyz="-2.18873575580501E-09"
+        izz="4.59535500824023E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://rh1621hand_z/meshes/fz1633_Link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.898039215686275 0.917647058823529 0.929411764705882 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://rh1621hand_z/meshes/fz1633_Link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="fz1633"
+    type="revolute">
+    <origin
+      xyz="-0.04498 0.0032918 0.0021342"
+      rpy="0 0 -1.5708" />
+    <parent
+      link="fz1632_Link" />
+    <child
+      link="fz1633_Link" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="0"
+      upper="1.391"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="fz1634_Link">
+    <inertial>
+      <origin
+        xyz="-0.00502418449367806 -0.00349646499277853 0.00846617106297091"
+        rpy="0 0 0" />
+      <mass
+        value="0.00405498360096908" />
+      <inertia
+        ixx="2.89791882591403E-07"
+        ixy="-9.76030901487034E-08"
+        ixz="-5.50133747989748E-12"
+        iyy="2.01167848713787E-07"
+        iyz="-2.6607616951574E-12"
+        izz="3.37104855198296E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://rh1621hand_z/meshes/fz1634_Link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.898039215686275 0.917647058823529 0.929411764705882 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://rh1621hand_z/meshes/fz1634_Link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="fz1634"
+    type="revolute">
+    <origin
+      xyz="0.0042531 -0.026663 -0.0001999"
+      rpy="0 0 0" />
+    <parent
+      link="fz1633_Link" />
+    <child
+      link="fz1634_Link" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="0"
+      upper="1.18"
+      effort="0"
+      velocity="0" />
+    <mimic joint="fz1633" multiplier="1.0" offset="0.0"/>
+  </joint>
+  <link
+    name="fz1635_Link">
+    <inertial>
+      <origin
+        xyz="0.00155114703004746 6.83807671787717E-06 -0.0054126311386529"
+        rpy="0 0 0" />
+      <mass
+        value="0.00215219870436798" />
+      <inertia
+        ixx="1.56764445703786E-07"
+        ixy="-7.00918692856857E-11"
+        ixz="2.69063986903201E-08"
+        iyy="1.24856659408869E-07"
+        iyz="7.08838853818979E-11"
+        izz="1.0356862342243E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://rh1621hand_z/meshes/fz1635_Link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.298039215686275 0.298039215686275 0.298039215686275 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://rh1621hand_z/meshes/fz1635_Link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="fz1635"
+    type="revolute">
+    <origin
+      xyz="-0.0050965 -0.018753 0.0084661"
+      rpy="1.5698 0 0" />
+    <parent
+      link="fz1634_Link" />
+    <child
+      link="fz1635_Link" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="fz1641_Link">
+    <inertial>
+      <origin
+        xyz="-5.74540415243519E-15 -3.40005801291454E-16 0.0144895176625968"
+        rpy="0 0 0" />
+      <mass
+        value="0.00163674187446043" />
+      <inertia
+        ixx="4.95179442076948E-08"
+        ixy="-3.55735142967568E-11"
+        ixz="1.31940574478053E-21"
+        iyy="8.54469633350305E-08"
+        iyz="-1.33290791365707E-18"
+        izz="4.31474049831045E-08" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://rh1621hand_z/meshes/fz1641_Link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.898039215686275 0.917647058823529 0.929411764705882 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://rh1621hand_z/meshes/fz1641_Link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="fz1641"
+    type="revolute">
+    <origin
+      xyz="-0.018 0.01175 0.1175"
+      rpy="1.5708 0 1.5708" />
+    <parent
+      link="base_link" />
+    <child
+      link="fz1641_Link" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-0.349"
+      upper="0.349"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="fz1642_Link">
+    <inertial>
+      <origin
+        xyz="-0.021685623715368 -0.000531168877343748 0.0103777995248251"
+        rpy="0 0 0" />
+      <mass
+        value="0.00954315448427091" />
+      <inertia
+        ixx="3.914511120723E-07"
+        ixy="-2.95838326528407E-08"
+        ixz="-2.01869963009742E-09"
+        iyy="1.35747461134158E-06"
+        iyz="1.48026687802104E-11"
+        izz="1.63482725601902E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://rh1621hand_z/meshes/fz1642_Link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.898039215686275 0.917647058823529 0.929411764705882 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://rh1621hand_z/meshes/fz1642_Link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="fz1642"
+    type="revolute">
+    <origin
+      xyz="-0.0105 -1.0396E-05 0.0208"
+      rpy="-1.5708 0 -1.5698" />
+    <parent
+      link="fz1641_Link" />
+    <child
+      link="fz1642_Link" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="0"
+      upper="1.557"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="fz1643_Link">
+    <inertial>
+      <origin
+        xyz="0.00116053810184978 -0.0127963355019802 0.00830069106624108"
+        rpy="0 0 0" />
+      <mass
+        value="0.00454257516924822" />
+      <inertia
+        ixx="3.73420483839231E-07"
+        ixy="3.72421025146091E-08"
+        ixz="6.78010247628026E-10"
+        iyy="1.47314933059323E-07"
+        iyz="-2.17739478511835E-09"
+        izz="4.59536150449292E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://rh1621hand_z/meshes/fz1643_Link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.898039215686275 0.917647058823529 0.929411764705882 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://rh1621hand_z/meshes/fz1643_Link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="fz1643"
+    type="revolute">
+    <origin
+      xyz="-0.03998 0.0032593 0.002134"
+      rpy="0 0 -1.5708" />
+    <parent
+      link="fz1642_Link" />
+    <child
+      link="fz1643_Link" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="0"
+      upper="1.406"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="fz1644_Link">
+    <inertial>
+      <origin
+        xyz="-0.00489152969230376 -0.00367976636414388 0.00846615767419906"
+        rpy="0 0 0" />
+      <mass
+        value="0.00405498024049961" />
+      <inertia
+        ixx="2.96879098515381E-07"
+        ixy="-9.40631811507041E-08"
+        ixz="-5.62398656491064E-12"
+        iyy="1.94079483302719E-07"
+        iyz="-3.21470799452492E-12"
+        izz="3.3710339668994E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://rh1621hand_z/meshes/fz1644_Link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.898039215686275 0.917647058823529 0.929411764705882 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://rh1621hand_z/meshes/fz1644_Link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="fz1644"
+    type="revolute">
+    <origin
+      xyz="0.0047606 -0.026577 -0.0002"
+      rpy="0 0 0" />
+    <parent
+      link="fz1643_Link" />
+    <child
+      link="fz1644_Link" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="0"
+      upper="1.169"
+      effort="0"
+      velocity="0" />
+    <mimic joint="fz1643" multiplier="1.0" offset="0.0"/>
+  </joint>
+  <link
+    name="fz1645_Link">
+    <inertial>
+      <origin
+        xyz="0.00135005364678038 6.88571630378526E-06 -0.00546628807342014"
+        rpy="0 0 0" />
+      <mass
+        value="0.00215218961370329" />
+      <inertia
+        ixx="1.58678708578948E-07"
+        ixy="-6.62369439222682E-11"
+        ixz="2.48686374973047E-08"
+        iyy="1.2485665252277E-07"
+        iyz="7.4547130696142E-11"
+        izz="1.01653844463043E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://rh1621hand_z/meshes/fz1645_Link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.298039215686275 0.298039215686275 0.298039215686275 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://rh1621hand_z/meshes/fz1645_Link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="fz1645"
+    type="revolute">
+    <origin
+      xyz="-0.0044 -0.018928 0.008466"
+      rpy="1.5698 0 0" />
+    <parent
+      link="fz1644_Link" />
+    <child
+      link="fz1645_Link" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="fz1651_Link">
+    <inertial>
+      <origin
+        xyz="5.96744875736022E-16 0 0.0144895176625967"
+        rpy="0 0 0" />
+      <mass
+        value="0.00163674187446044" />
+      <inertia
+        ixx="4.95179089862171E-08"
+        ixy="-2.306716205351E-14"
+        ixz="1.90937826627263E-24"
+        iyy="8.54469985565081E-08"
+        iyz="-1.33290156472489E-18"
+        izz="4.31474049831044E-08" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://rh1621hand_z/meshes/fz1651_Link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.898039215686275 0.917647058823529 0.929411764705882 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://rh1621hand_z/meshes/fz1651_Link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="fz1651"
+    type="revolute">
+    <origin
+      xyz="-0.018 0.03525 0.114"
+      rpy="1.5708 0 1.5708" />
+    <parent
+      link="base_link" />
+    <child
+      link="fz1651_Link" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-0.349"
+      upper="0.349"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="fz1652_Link">
+    <inertial>
+      <origin
+        xyz="-0.0198646110387978 -0.000147893589287898 0.0104925113015725"
+        rpy="0 0 0" />
+      <mass
+        value="0.00868396754881264" />
+      <inertia
+        ixx="3.84741758580236E-07"
+        ixy="7.1764882142474E-09"
+        ixz="2.99382302317364E-08"
+        iyy="1.05867098997021E-06"
+        iyz="-1.10470727852877E-08"
+        izz="1.26090391418615E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://rh1621hand_z/meshes/fz1652_Link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.898039215686275 0.917647058823529 0.929411764705882 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://rh1621hand_z/meshes/fz1652_Link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="fz1652"
+    type="revolute">
+    <origin
+      xyz="-0.0105 0 0.0208"
+      rpy="-1.5708 0 -1.5708" />
+    <parent
+      link="fz1651_Link" />
+    <child
+      link="fz1652_Link" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="0"
+      upper="1.557"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="fz1653_Link">
+    <inertial>
+      <origin
+        xyz="0.00108469663160378 -0.0128029862233733 0.00830069129754357"
+        rpy="0 0 0" />
+      <mass
+        value="0.0045425715720305" />
+      <inertia
+        ixx="3.73853651547423E-07"
+        ixy="3.58997306852251E-08"
+        ixz="6.65086359071999E-10"
+        iyy="1.4688146239504E-07"
+        iyz="-2.18136906596261E-09"
+        izz="4.59535921468656E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://rh1621hand_z/meshes/fz1653_Link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.898039215686275 0.917647058823529 0.929411764705882 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://rh1621hand_z/meshes/fz1653_Link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="fz1653"
+    type="revolute">
+    <origin
+      xyz="-0.03498 0.0032273 0.002234"
+      rpy="0 0 -1.5708" />
+    <parent
+      link="fz1652_Link" />
+    <child
+      link="fz1653_Link" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="0"
+      upper="1.447"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="fz1654_Link">
+    <inertial>
+      <origin
+        xyz="-0.00449912062926857 -0.00331955396364721 0.00846615802445298"
+        rpy="0 0 0" />
+      <mass
+        value="0.00405498123801858" />
+      <inertia
+        ixx="2.94704272318859E-07"
+        ixy="-9.52195762989183E-08"
+        ixz="-5.69022062628575E-12"
+        iyy="1.96254645100566E-07"
+        iyz="-3.18762889324203E-12"
+        izz="3.37103832106318E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://rh1621hand_z/meshes/fz1654_Link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.898039215686275 0.917647058823529 0.929411764705882 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://rh1621hand_z/meshes/fz1654_Link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="fz1654"
+    type="revolute">
+    <origin
+      xyz="0.0041687 -0.026908 -0.0002"
+      rpy="0 0 0" />
+    <parent
+      link="fz1653_Link" />
+    <child
+      link="fz1654_Link" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="0"
+      upper="1.185"
+      effort="0"
+      velocity="0" />
+    <mimic joint="fz1653" multiplier="1.0" offset="0.0"/>
+  </joint>
+  <link
+    name="fz1655_Link">
+    <inertial>
+      <origin
+        xyz="0.0014127849063802 1.47717877554965E-06 -0.00545042108779517"
+        rpy="0 0 0" />
+      <mass
+        value="0.00215219127352113" />
+      <inertia
+        ixx="1.58099562671235E-07"
+        ixy="-4.22010605799122E-11"
+        ixz="2.55170996395273E-08"
+        iyy="1.24856437942423E-07"
+        iyz="5.10803353003398E-11"
+        izz="1.02232746132439E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://rh1621hand_z/meshes/fz1655_Link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.298039215686275 0.298039215686275 0.298039215686275 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://rh1621hand_z/meshes/fz1655_Link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="fz1655"
+    type="revolute">
+    <origin
+      xyz="-0.0041829 -0.018573 0.008466"
+      rpy="1.5708 0 0" />
+    <parent
+      link="fz1654_Link" />
+    <child
+      link="fz1655_Link" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+
+  <!-- 在所有 link 和 joint 定义之后添加 transmission -->
+  <transmission name="trans_fz1611">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="fz1611">
+      <hardwareInterface>EffortJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="actuator_fz1611">
+      <hardwareInterface>EffortJointInterface</hardwareInterface>
+      <mechanicalReduction>1</mechanicalReduction>
+    </actuator>
+  </transmission>
+  <transmission name="trans_fz1612">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="fz1612">
+      <hardwareInterface>EffortJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="actuator_fz1612">
+      <hardwareInterface>EffortJointInterface</hardwareInterface>
+      <mechanicalReduction>1</mechanicalReduction>
+    </actuator>
+  </transmission>
+  <transmission name="trans_fz1613">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="fz1613">
+      <hardwareInterface>EffortJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="actuator_fz1613">
+      <hardwareInterface>EffortJointInterface</hardwareInterface>
+      <mechanicalReduction>1</mechanicalReduction>
+    </actuator>
+  </transmission>
+  <transmission name="trans_fz1614">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="fz1614">
+      <hardwareInterface>EffortJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="actuator_fz1614">
+      <hardwareInterface>EffortJointInterface</hardwareInterface>
+      <mechanicalReduction>1</mechanicalReduction>
+    </actuator>
+  </transmission>
+  <transmission name="trans_fz1615">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="fz1615">
+      <hardwareInterface>EffortJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="actuator_fz1615">
+      <hardwareInterface>EffortJointInterface</hardwareInterface>
+      <mechanicalReduction>1</mechanicalReduction>
+    </actuator>
+  </transmission>
+  <transmission name="trans_fz1616">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="fz1616">
+      <hardwareInterface>EffortJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="actuator_fz1616">
+      <hardwareInterface>EffortJointInterface</hardwareInterface>
+      <mechanicalReduction>1</mechanicalReduction>
+    </actuator>
+  </transmission>
+  <transmission name="trans_fz1621">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="fz1621">
+      <hardwareInterface>EffortJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="actuator_fz1621">
+      <hardwareInterface>EffortJointInterface</hardwareInterface>
+      <mechanicalReduction>1</mechanicalReduction>
+    </actuator>
+  </transmission>
+  <transmission name="trans_fz1622">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="fz1622">
+      <hardwareInterface>EffortJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="actuator_fz1622">
+      <hardwareInterface>EffortJointInterface</hardwareInterface>
+      <mechanicalReduction>1</mechanicalReduction>
+    </actuator>
+  </transmission>
+  <transmission name="trans_fz1623">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="fz1623">
+      <hardwareInterface>EffortJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="actuator_fz1623">
+      <hardwareInterface>EffortJointInterface</hardwareInterface>
+      <mechanicalReduction>1</mechanicalReduction>
+    </actuator>
+  </transmission>
+  <transmission name="trans_fz1624">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="fz1624">
+      <hardwareInterface>EffortJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="actuator_fz1624">
+      <hardwareInterface>EffortJointInterface</hardwareInterface>
+      <mechanicalReduction>1</mechanicalReduction>
+    </actuator>
+  </transmission>
+  <transmission name="trans_fz1625">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="fz1625">
+      <hardwareInterface>EffortJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="actuator_fz1625">
+      <hardwareInterface>EffortJointInterface</hardwareInterface>
+      <mechanicalReduction>1</mechanicalReduction>
+    </actuator>
+  </transmission>
+  <transmission name="trans_fz1631">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="fz1631">
+      <hardwareInterface>EffortJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="actuator_fz1631">
+      <hardwareInterface>EffortJointInterface</hardwareInterface>
+      <mechanicalReduction>1</mechanicalReduction>
+    </actuator>
+  </transmission>
+  <transmission name="trans_fz1632">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="fz1632">
+      <hardwareInterface>EffortJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="actuator_fz1632">
+      <hardwareInterface>EffortJointInterface</hardwareInterface>
+      <mechanicalReduction>1</mechanicalReduction>
+    </actuator>
+  </transmission>
+  <transmission name="trans_fz1633">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="fz1633">
+      <hardwareInterface>EffortJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="actuator_fz1633">
+      <hardwareInterface>EffortJointInterface</hardwareInterface>
+      <mechanicalReduction>1</mechanicalReduction>
+    </actuator>
+  </transmission>
+  <transmission name="trans_fz1634">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="fz1634">
+      <hardwareInterface>EffortJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="actuator_fz1634">
+      <hardwareInterface>EffortJointInterface</hardwareInterface>
+      <mechanicalReduction>1</mechanicalReduction>
+    </actuator>
+  </transmission>
+  <transmission name="trans_fz1635">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="fz1635">
+      <hardwareInterface>EffortJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="actuator_fz1635">
+      <hardwareInterface>EffortJointInterface</hardwareInterface>
+      <mechanicalReduction>1</mechanicalReduction>
+    </actuator>
+  </transmission>
+  <transmission name="trans_fz1641">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="fz1641">
+      <hardwareInterface>EffortJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="actuator_fz1641">
+      <hardwareInterface>EffortJointInterface</hardwareInterface>
+      <mechanicalReduction>1</mechanicalReduction>
+    </actuator>
+  </transmission>
+  <transmission name="trans_fz1642">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="fz1642">
+      <hardwareInterface>EffortJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="actuator_fz1642">
+      <hardwareInterface>EffortJointInterface</hardwareInterface>
+      <mechanicalReduction>1</mechanicalReduction>
+    </actuator>
+  </transmission>
+  <transmission name="trans_fz1643">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="fz1643">
+      <hardwareInterface>EffortJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="actuator_fz1643">
+      <hardwareInterface>EffortJointInterface</hardwareInterface>
+      <mechanicalReduction>1</mechanicalReduction>
+    </actuator>
+  </transmission>
+  <transmission name="trans_fz1644">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="fz1644">
+      <hardwareInterface>EffortJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="actuator_fz1644">
+      <hardwareInterface>EffortJointInterface</hardwareInterface>
+      <mechanicalReduction>1</mechanicalReduction>
+    </actuator>
+  </transmission>
+  <transmission name="trans_fz1645">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="fz1645">
+      <hardwareInterface>EffortJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="actuator_fz1645">
+      <hardwareInterface>EffortJointInterface</hardwareInterface>
+      <mechanicalReduction>1</mechanicalReduction>
+    </actuator>
+  </transmission>
+  <transmission name="trans_fz1651">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="fz1651">
+      <hardwareInterface>EffortJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="actuator_fz1651">
+      <hardwareInterface>EffortJointInterface</hardwareInterface>
+      <mechanicalReduction>1</mechanicalReduction>
+    </actuator>
+  </transmission>
+  <transmission name="trans_fz1652">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="fz1652">
+      <hardwareInterface>EffortJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="actuator_fz1652">
+      <hardwareInterface>EffortJointInterface</hardwareInterface>
+      <mechanicalReduction>1</mechanicalReduction>
+    </actuator>
+  </transmission>
+  <transmission name="trans_fz1653">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="fz1653">
+      <hardwareInterface>EffortJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="actuator_fz1653">
+      <hardwareInterface>EffortJointInterface</hardwareInterface>
+      <mechanicalReduction>1</mechanicalReduction>
+    </actuator>
+  </transmission>
+  <transmission name="trans_fz1654">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="fz1654">
+      <hardwareInterface>EffortJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="actuator_fz1654">
+      <hardwareInterface>EffortJointInterface</hardwareInterface>
+      <mechanicalReduction>1</mechanicalReduction>
+    </actuator>
+  </transmission>
+  <transmission name="trans_fz1655">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="fz1655">
+      <hardwareInterface>EffortJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="actuator_fz1655">
+      <hardwareInterface>EffortJointInterface</hardwareInterface>
+      <mechanicalReduction>1</mechanicalReduction>
+    </actuator>
+  </transmission>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</robot>
